@@ -11,7 +11,7 @@ const compiler = Webpack(require('./dev.conf'));
 
 // 开发模式下的配置
 const devServerOptions = {
-	open: false,
+	open: true,
 	hot: true,
 	port: 7070,
 	// https: true,

@@ -1,7 +1,6 @@
 const PATH = require("path");
 const Webpack = require("webpack");
 const WebpackMerge = require("webpack-merge");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = WebpackMerge(require("./conf"), {
@@ -37,7 +36,6 @@ module.exports = WebpackMerge(require("./conf"), {
 		}]
 	},
 	plugins: [
-		new VueLoaderPlugin(),
 		new Webpack.NamedModulesPlugin(),
 		new Webpack.HotModuleReplacementPlugin()
 	]

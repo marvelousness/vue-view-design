@@ -2,7 +2,6 @@ const OS = require("os");
 const PATH = require("path");
 const Webpack = require("webpack");
 const WebpackMerge = require("webpack-merge");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin")
@@ -152,7 +151,6 @@ module.exports = WebpackMerge(require("./conf"), {
 		}
 	},
 	plugins: [
-		new VueLoaderPlugin(),
 		new MiniCssExtractPlugin({
 			filename: "statics/css/[name].css",
 			chunkFilename: "statics/css/[name].css",

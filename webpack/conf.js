@@ -1,4 +1,6 @@
 const PATH = require("path");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 function resolve(pathname) {
 	return PATH.resolve(__dirname, "../" + pathname);
@@ -34,5 +36,13 @@ module.exports = {
 			statics: resolve("src/assets/"),
 			vue: resolve("node_modules/vue/dist/vue.js")
 		}
-	}
+	},
+	
+	plugins: [
+		new VueLoaderPlugin(),
+		new HtmlWebpackPlugin({
+			template: resolve("index.html"),
+			inject: true
+		})
+	]
 };
