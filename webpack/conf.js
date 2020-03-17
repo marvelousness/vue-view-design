@@ -22,6 +22,7 @@ module.exports = {
 		alias: {
 			src: resolve("src/"),
 			statics: resolve("src/assets/"),
+			api: resolve("src/api"),
 			vue: resolve("node_modules/vue/dist/vue.js")
 		}
 	},
