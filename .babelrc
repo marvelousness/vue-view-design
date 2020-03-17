@@ -1,0 +1,19 @@
+{
+	"presets": [[
+			"env", {
+				"modules": false
+			}
+		],
+		"stage-3"
+	],
+	"plugins": [
+		"syntax-dynamic-import",
+		"dynamic-import-node",
+		"transform-class-properties",
+		"transform-es5-property-mutators",
+		"transform-object-rest-spread",
+		"transform-runtime",
+		"transform-vue-jsx"
+	],
+	"comments": false
+}
