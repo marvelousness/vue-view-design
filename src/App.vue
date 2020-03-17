@@ -5,7 +5,7 @@
 		<h1 slot="title">Hello World!</h1>
 		<a href="#" slot="extra" @click.prevent="handleExtraClick">say hi to me!</a>
 		<div class="container">
-			<Tabs :value="tab.value">
+			<Tabs :value="tab.value" @on-click="handleTabClick">
 				<TabPane label="简述" name="intro">
 					<div class="intro">
 						<p>前端涉猎的内容有：</p>
@@ -28,7 +28,7 @@
 					<Tooltip content="点击此处测试表单数据提交" placement="top" transfer>
 						<Button type="primary" @click="modal.visible = true">POST</Button>
 					</Tooltip>
-					<div class="table-container" v-if="tab.value == 'api'">
+					<div class="table-container">
 						<Spin size="large" fix v-if="table.loading">加载中...</Spin>
 						<Table border :columns="table.columns" :data="table.data"></Table>
 					</div>
@@ -151,11 +151,17 @@
 			}
 		},
 		mounted() {
-			this.handleRefresh();
 		},
 		methods: {
 			handleExtraClick() {
 				this.$Message.info("Hi");
+			},
+			handleTabClick(value) {
+				if(value == "api") {
+					this.handleRefresh();
+				} else {
+					this.table.data = [];
+				}
 			},
 			handleAddModalFormItem() {
 				if(this.length > 9) {
