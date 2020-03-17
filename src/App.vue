@@ -189,7 +189,17 @@
 					that.table.data = response.data;
 					that.table.loading = false;
 				}).catch((err) => {
-					that.$Message.error(err.message);
+					if(err) {
+						if(err.response && err.response.data) {
+							that.$Message.error(err.response.data);
+						} else if(err.message) {
+							that.$Message.error(err.message);
+						} else {
+							that.$Message.error("发生未经处理的异常！");
+						}
+					} else {
+						that.$Message.error("服务器异常！");
+					}
 					that.table.loading = false;
 				});
 			},
@@ -222,7 +232,17 @@
 						}
 						that.modal.pending = false;
 					}).catch((err) => {
-						that.$Message.error(err.message);
+						if(err) {
+							if(err.response && err.response.data) {
+								that.$Message.error(err.response.data);
+							} else if(err.message) {
+								that.$Message.error(err.message);
+							} else {
+								that.$Message.error("发生未经处理的异常！");
+							}
+						} else {
+							that.$Message.error("服务器异常！");
+						}
 						that.modal.pending = false;
 					});
 				});
