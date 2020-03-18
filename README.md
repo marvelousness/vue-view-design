@@ -14,15 +14,15 @@
 vue-view-design
 	│
 	├─node_modules
-	├─src							--> 源码目录
-	│  ├─api						-->	 ├ API 配置文件目录
-	│  ├─assets						-->	 ├ 资源文件目录
-	│  │  ├─css						-->	 │ 	└ 样式表文件目录
-	│  │  └─images						-->	 │	└ 图片文件目录
-	│  └─mock						-->	 └ mock 配置文件
-	├─target						--> 使用 wabpack 打包后的目标目录
-	├─test							--> 测试目录
-	└─webpack						--> webpack 配置目录
+	├─src			--> 源码目录
+	│  ├─api		-->	 ├ API 配置文件目录
+	│  ├─assets		-->	 ├ 资源文件目录
+	│  │  ├─css		-->	 │ 	└ 样式表文件目录
+	│  │  └─images		-->	 │	└ 图片文件目录
+	│  └─mock		-->	 └ mock 配置文件
+	├─target		--> 使用 wabpack 打包后的目标目录
+	├─test			--> 测试目录
+	└─webpack		--> webpack 配置目录
 ```
 
 
