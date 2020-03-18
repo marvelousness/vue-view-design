@@ -8,7 +8,7 @@
 5. webpack@4.41.2
 
 
-## 关于 Vue
+## 关于 vue
 
 1. 官网：[https://cn.vuejs.org/](https://cn.vuejs.org/)
 2. 文档: [https://cn.vuejs.org/v2/api/](https://cn.vuejs.org/v2/api/)
