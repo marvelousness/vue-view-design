@@ -9,11 +9,11 @@
 	"plugins": [
 		"syntax-dynamic-import",
 		"dynamic-import-node",
-		"transform-class-properties",
-		"transform-es5-property-mutators",
-		"transform-object-rest-spread",
+		"transform-vue-jsx",
 		"transform-runtime",
-		"transform-vue-jsx"
+		"transform-class-properties",
+		"transform-object-rest-spread",
+		"transform-es5-property-mutators"
 	],
 	"comments": false
 }

@@ -25,6 +25,7 @@ function request(_url, _method, _params, _type) {
 		url: _url,
 		withCredentials: true
 	};
+	
 	if(_method.toUpperCase() == "PUT" || _method.toUpperCase() == "POST" || _method.toUpperCase() == "PATCH") {
 		if(_type.toUpperCase() == "FORMDATA") {
 			// `transformRequest` 允许在向服务器发送前，修改请求数据，

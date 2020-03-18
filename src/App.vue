@@ -223,6 +223,7 @@
 							data[key] = value;
 						}
 					}
+					
 					that.modal.pending = true;
 					API.postData(data).then((response) => {
 						if(response && response.data == "success") {
@@ -248,7 +249,7 @@
 				});
 			}
 		}
-	}
+	};
 </script>
 
 <style>

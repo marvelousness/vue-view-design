@@ -1,11 +1,11 @@
 const Mock = require("mockjs");
-/**
- * 开始执行 Mock
- */
+
 module.exports = function() {
+	// 配置 mock 响应的时间在 120ms ~~ 2s 之间
 	Mock.setup({
 		timeout: '120-2000'
 	});
+	// 拦截 /data/list 请求
 	Mock.mock(/data\/list/, function() {
 		let data = Mock.mock({
 		  "rows|1-10": [
@@ -21,6 +21,7 @@ module.exports = function() {
 		});
 		return data.rows;
 	});
+	// 拦截 /data/save 请求
 	Mock.mock(/data\/save/, function(request) {
 		let body = request && request.body ? JSON.parse(request.body) : null;
 		if(body) {

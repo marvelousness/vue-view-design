@@ -27,7 +27,7 @@ const devServerOptions = {
 	watchOptions: {
 		poll: 1000,
 		watch: true,
-		ignored: /node_modules/,
+		// ignored: /node_modules/,
 		watchContentBase: true
 	}
 };

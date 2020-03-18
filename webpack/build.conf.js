@@ -8,6 +8,9 @@ const CompressionWebpackPlugin = require("compression-webpack-plugin")
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
+/**
+ * 解析物理地址
+ */
 function resolve(pathname) {
 	return PATH.resolve(__dirname, "../" + pathname);
 }

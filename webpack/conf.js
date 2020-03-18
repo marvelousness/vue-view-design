@@ -2,6 +2,9 @@ const PATH = require("path");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+/**
+ * 解析物理地址
+ */
 function resolve(pathname) {
 	return PATH.resolve(__dirname, "../" + pathname);
 }
@@ -21,8 +24,8 @@ module.exports = {
 		],
 		alias: {
 			src: resolve("src/"),
-			statics: resolve("src/assets/"),
 			api: resolve("src/api"),
+			statics: resolve("src/assets/"),
 			vue: resolve("node_modules/vue/dist/vue.js")
 		}
 	},
@@ -38,7 +41,6 @@ module.exports = {
 			vue: resolve("node_modules/vue/dist/vue.js")
 		}
 	},
-	
 	plugins: [
 		new VueLoaderPlugin(),
 		new HtmlWebpackPlugin({

@@ -13,7 +13,10 @@
   "keywords": [
     "vue",
     "iview",
-    "view-design"
+    "view-design",
+    "axios",
+    "mock",
+    "webpack"
   ],
   "author": "marvelousness@foxmail.com",
   "license": "MIT",

@@ -22,4 +22,3 @@ rimraf(conf.output.path, function() {
 		process.stdout.write("Build complete, use " + (Date.now() - timestamp) + "ms.\n");
 	});
 });
-
