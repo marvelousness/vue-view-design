@@ -1,11 +1,14 @@
 # vue-view-design
 
-这是一个基于 vue 的项目，仅作学习，涉猎内容主要有：
+Vue 是目前国内前端开发工程师最为熟悉的开发框架，本文特将工作中涉猎较多的几个内容整理成一个简单案例，仅供学习。主要涉及如下五个内容：
+
 1. vue@2.6.10
-2. view-design@4.1.3-rc.2
+2. view-design@4.1.3-rc.2 （前身是 iview）
 3. axios@0.18.1
 4. mockjs@1.1.0
 5. webpack@4.41.2
+
+很多 vue 项目都是在一个简单的小案例的基础上进行不断的拓展，在本例中，为了将 vue、viewui、axios、mock 和 webpack 这五个内容简单的整合。并没有编写很复杂的代码。可通过这个案例，以小见大。根据这个项目可以清晰知道一个前端项目需要的基础设施和基础结构，可以在此基础上做的任何拓展。
 
 
 ## 项目结构
@@ -57,3 +60,8 @@ iView 作者将在新仓库（https://github.com/view-design/ViewUI）继续开�
 
 1. 官网：[https://www.webpackjs.com/](https://www.webpackjs.com/)
 2. 文档：[https://www.webpackjs.com/concepts/](https://www.webpackjs.com/concepts/)
+
+
+## 附言
+
+本项目仅作学习。如果您对该项目有什么建议或者意见，欢迎给我留言 [marvelousness@foxmail.com](mailto:marvelousness@foxmail.com)
